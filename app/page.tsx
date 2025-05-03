@@ -11,8 +11,7 @@ async function getData () {
 export default async function Home() {
   const data = await getData();
   const features = data.data[0];
-
-  console.log(features);
+  //console.log(features);
 
   return (
     <main className="h-svh w-screen p-6 flex items-center justify-center bg-slate-50 text-stone-900">
