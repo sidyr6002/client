@@ -14,7 +14,7 @@ export default async function Home() {
   //console.log(features);
 
   return (
-    <main className="h-svh w-screen p-6 flex items-center justify-center bg-slate-50 text-stone-900">
+    <main className="min-h-svh w-svw p-6 flex items-center justify-center bg-slate-50 text-stone-900">
       <FeatureSection data={features} />
     </main>
   );
