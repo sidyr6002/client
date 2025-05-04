@@ -1,7 +1,9 @@
 import FeatureSection from "@/components/feature-section";
 
 async function getData () {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/api/feature-highlights-sections?populate[items][populate]=image`);
+  const res = await fetch(`${process.env.STRAPI_API_URL}/api/feature-highlights-sections?populate[items][populate]=image`, {
+    cache: "no-cache",
+  });
   if (!res.ok) {
     throw new Error("Failed to fetch data");
   }
